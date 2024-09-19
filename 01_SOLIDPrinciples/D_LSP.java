@@ -47,7 +47,7 @@ class Sparrow extends FlyingBird {
 }
 
 class Ostrich extends Bird {
-    // Ostrich doesn't override `fly` since it cannot fly
+    // Ostrich doesn't override 'fly' since it cannot fly and inherits only Bird
     @Override
     public void display() {
         System.out.println("I am an Ostrich.");
