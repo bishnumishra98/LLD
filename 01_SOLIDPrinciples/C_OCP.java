@@ -16,10 +16,10 @@ class Discount_ {
 // Problem: The calculate() method is tightly coupled with discount types (CHRISTMAS, NEWYEAR), and every time a new
 //          discount type is introduced (e.g., "EASTER", "BLACKFRIDAY"), you'd have to edit the calculate() method,
 //          increasing the chances of breaking existing functionality or introducing bugs.
-// Solution: Use inheritance to extend without modifying existing code.
+// Solution: Use inheritance (OR) interface to extend without modifying existing code. Below is illustration using inheritance:
 
-abstract class Discount {
-    public abstract double calculate(double amount);
+abstract class Discount {   // An abstract class is a class that cannot be instantiated directly.
+    public abstract double calculate(double amount);   // abstract methods must be implemented by any non-abstract subclass.
 }
 
 class ChristmasDiscount extends Discount {
@@ -62,16 +62,16 @@ public class C_OCP {
         // Applying Christmas Discount
         Discount christmasDiscount = new ChristmasDiscount();
         double christmasDiscountedAmount = discountService.applyDiscount(christmasDiscount, 100.0);
-        System.out.println("Christmas Discounted Amount: " + christmasDiscountedAmount);  // o/p: 10.0
+        System.out.println("Christmas Discounted Amount: " + christmasDiscountedAmount);  // o/p: Christmas Discounted Amount: 10.0
 
         // Applying New Year Discount
         Discount newYearDiscount = new NewYearDiscount();
         double newYearDiscountedAmount = discountService.applyDiscount(newYearDiscount, 100.0);
-        System.out.println("New Year Discounted Amount: " + newYearDiscountedAmount);  // o/p: 15.0
+        System.out.println("New Year Discounted Amount: " + newYearDiscountedAmount);  // o/p: New Year Discounted Amount: 15.0
 
         // Applying Easter Discount
         Discount easterDiscount = new EasterDiscount();
         double easterDiscountedAmount = discountService.applyDiscount(easterDiscount, 100.0);
-        System.out.println("Easter Discounted Amount: " + easterDiscountedAmount);  // o/p: 20.0
+        System.out.println("Easter Discounted Amount: " + easterDiscountedAmount);  // o/p: Easter Discounted Amount: 20.0
     }
 }
