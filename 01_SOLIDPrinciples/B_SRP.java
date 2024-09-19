@@ -35,3 +35,23 @@ class InvoiceRepository {
         // logic to save invoice to the database
     }
 }
+
+
+// driver code
+public class B_SRP {
+    public static void main(String[] args) {
+        // Create instances of the refactored classes
+        InvoiceCalculator calculator = new InvoiceCalculator();
+        InvoicePrinter printer = new InvoicePrinter();
+        InvoiceRepository repository = new InvoiceRepository();
+        
+        // Calculate total
+        calculator.calculateTotal();
+        
+        // Print invoice
+        printer.printInvoice();
+        
+        // Save invoice to database
+        repository.saveToDatabase();
+    }
+}
