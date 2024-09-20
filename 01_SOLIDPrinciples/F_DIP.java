@@ -54,14 +54,15 @@ class Fan implements SwitchableDevice {
     @Override
     public void turnOn() {
         System.out.println("Fan is turned on.");
-   
     }
 }
 
 // High-level class now depends on abstraction (SwitchableDevice)
 class Switch {
-    private SwitchableDevice device;
+    private SwitchableDevice device;   // device is a SwitchableDevice type variable can hold a reference to
+                                      // any object that implements the SwitchableDevice interface
 
+    // ctor
     public Switch(SwitchableDevice device) {
         this.device = device;
     }
@@ -69,7 +70,7 @@ class Switch {
     public void operate() {
         device.turnOn();   // works with any device that implements SwitchableDevice
     }
-}    
+}
 
 
 // driver code
