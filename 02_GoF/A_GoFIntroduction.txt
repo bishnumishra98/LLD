@@ -1,0 +1,30 @@
+✰ The Gang of Four (GoF) refers to four authors — Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides — who
+   wrote the influential book titled "Design Patterns: Elements of Reusable Object-Oriented Software" in 1994. This book
+   introduced 23 foundational design patterns that are widely used in software development, particularly in
+   Object-Oriented Design (OOD). These patterns provide proven solutions to recurring problems in software design,
+   making systems more maintainable, flexible, and reusable.
+   In Low-Level Design (LLD), the GoF patterns are important because they offer standardized approaches for solving
+   common software design issues like object creation, communication, and behavior in an object-oriented way.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+✰ Importance of GoF Patterns in Low-Level Design (LLD)
+   A. Reusability: These patterns encourage the reuse of tried-and-tested solutions, making code more reliable.
+   B. Maintainability: By using common design patterns, the code becomes easier to maintain and extend.
+   C. Standardization: GoF patterns provide a common vocabulary among developers. Using these patterns ensures that
+                       other developers will understand the design decisions more quickly.
+   D. Loose Coupling: Many of these patterns help reduce dependencies between components, making the system more modular and flexible.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+✰ Categories of GoF Design Patterns
+
+   The 23 GoF design patterns are classified into three main categories:
+
+   1. Creational Patterns: Deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
+   2. Structural Patterns: Focus on how objects and classes are composed to form larger structures, providing ways to organize
+                           relationships between entities.
+   3. Behavioral Patterns: Focus on communication between objects, describing how they interact and assign responsibilities.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
